@@ -17,8 +17,9 @@ class FoodsController < ApplicationController
 		@posts = Post.where(category: @category)
 	end
 
-  def show
-  end
+  def show#id받아서 Post테이블에서 검색한게 @post에저장됨.
+		@post = Post.find(params[:id])
+	end
 
   def write
   end

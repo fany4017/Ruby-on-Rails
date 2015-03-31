@@ -1,5 +1,3 @@
-
-<p>Find me in app/views/foods/edit.htmlsh[:alert] %></p>
 <h2>맛집 게시글 수정하기</h2>
 
 <form action="/foods/edit_complete" method="post">
@@ -11,6 +9,7 @@
 					<option value="중식">중식</option>
 					<option value="양식">양식</option>
 			</select></p>
+			<%= @post.id %>
 			<p>제목: <input type="text" name="post_title" value="<%= @post.title %>"></p>
 			<p>내용: <textarea name="post_content"><%= @post.content %></textarea></p>
 			<input type="submit" value="수정하기">

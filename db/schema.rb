@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150330012732) do
 
   create_table "comments", force: true do |t|
-    t.string   "user_id"
+    t.integer  "user_id"
     t.integer  "post_id"
     t.string   "content"
     t.datetime "created_at"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150330012732) do
   end
 
   create_table "posts", force: true do |t|
-    t.string   "user_id"
+    t.integer  "user_id"
     t.string   "category"
     t.string   "title"
     t.string   "content"

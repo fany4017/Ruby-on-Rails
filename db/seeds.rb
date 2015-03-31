@@ -10,3 +10,4 @@ categories.each do |category|
 		p.save
 	end
 end
+
